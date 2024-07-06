@@ -1,0 +1,163 @@
+(social):0:1: E902 FileNotFoundError: [Errno 2] No such file or directory: '(social)'
+D:\DjangoProject\social_network\social\migrations\0001_initial.py:20:80: E501 line too long (94 > 79 characters)
+D:\DjangoProject\social_network\social\migrations\0001_initial.py:21:80: E501 line too long (146 > 79 characters)
+D:\DjangoProject\social_network\social\migrations\0001_initial.py:24:80: E501 line too long (147 > 79 characters)
+D:\DjangoProject\social_network\social\migrations\0001_initial.py:25:80: E501 line too long (143 > 79 characters)
+D:\DjangoProject\social_network\social\migrations\0003_alter_friendrequest_status.py:16:80: E501 line too long (155 > 79 characters)
+D:\DjangoProject\social_network\social\serializers\__init__.py:1:1: F401 '.friend_request.FriendRequestSerializer' imported but unused
+D:\DjangoProject\social_network\social\serializers\__init__.py:2:1: F401 '.login.LoginSerializer' imported but unused
+D:\DjangoProject\social_network\social\serializers\__init__.py:3:1: F401 '.logout.LogoutSerializer' imported but unused
+D:\DjangoProject\social_network\social\serializers\__init__.py:4:1: F401 '.users.UserSerializer' imported but unused
+D:\DjangoProject\social_network\social\serializers\login.py:4:1: E302 expected 2 blank lines, found 1
+D:\DjangoProject\social_network\social\serializers\login.py:6:80: E501 line too long (86 > 79 characters)
+D:\DjangoProject\social_network\social\serializers\logout.py:16:73: W292 no newline at end of file
+D:\DjangoProject\social_network\social\serializers\users.py:7:1: W191 indentation contains tabs
+D:\DjangoProject\social_network\social\serializers\users.py:8:1: W191 indentation contains tabs
+D:\DjangoProject\social_network\social\serializers\users.py:8:8: E225 missing whitespace around operator
+D:\DjangoProject\social_network\social\serializers\users.py:9:1: W191 indentation contains tabs
+D:\DjangoProject\social_network\social\serializers\users.py:9:9: E225 missing whitespace around operator
+D:\DjangoProject\social_network\social\serializers\users.py:12:1: W391 blank line at end of file
+D:\DjangoProject\social_network\social\tests.py:1:1: F401 'django.test.TestCase' imported but unused
+D:\DjangoProject\social_network\social\urls.py:17:6: E131 continuation line unaligned for hanging indent
+D:\DjangoProject\social_network\social\views\__init__.py:1:1: F401 '.friend_request.FriendRequestViewset' imported but unused
+D:\DjangoProject\social_network\social\views\__init__.py:2:1: F401 '.user_search.UserSearchAPIView' imported but unused
+D:\DjangoProject\social_network\social\views\__init__.py:3:1: F401 '.signup.SignupAPIView' imported but unused
+D:\DjangoProject\social_network\social\views\__init__.py:4:1: F401 '.login.LoginAPIView' imported but unused
+D:\DjangoProject\social_network\social\views\__init__.py:5:1: F401 '.logout.LogoutAPIView' imported but unused
+D:\DjangoProject\social_network\social\views\__init__.py:6:1: F401 '.email_backend.EmailBackend' imported but unused
+D:\DjangoProject\social_network\social\views\email_backend.py:3:1: F401 'social.serializers.UserSerializer' imported but unused
+D:\DjangoProject\social_network\social\views\email_backend.py:3:46: W291 trailing whitespace
+D:\DjangoProject\social_network\social\views\email_backend.py:4:1: F401 'rest_framework.viewsets' imported but unused
+D:\DjangoProject\social_network\social\views\email_backend.py:8:1: W293 blank line contains whitespace
+D:\DjangoProject\social_network\social\views\email_backend.py:9:1: E302 expected 2 blank lines, found 1
+D:\DjangoProject\social_network\social\views\email_backend.py:20:1: W293 blank line contains whitespace
+D:\DjangoProject\social_network\social\views\email_backend.py:20:9: W292 no newline at end of file
+D:\DjangoProject\social_network\social\views\friend_request.py:6:80: E501 line too long (84 > 79 characters)
+D:\DjangoProject\social_network\social\views\friend_request.py:15:1: W191 indentation contains tabs
+D:\DjangoProject\social_network\social\views\friend_request.py:16:1: W191 indentation contains tabs
+D:\DjangoProject\social_network\social\views\friend_request.py:18:1: W191 indentation contains tabs
+D:\DjangoProject\social_network\social\views\friend_request.py:19:1: W191 indentation contains tabs
+D:\DjangoProject\social_network\social\views\friend_request.py:22:1: W191 indentation contains tabs
+D:\DjangoProject\social_network\social\views\friend_request.py:22:2: E303 too many blank lines (2)
+D:\DjangoProject\social_network\social\views\friend_request.py:23:1: W191 indentation contains tabs
+D:\DjangoProject\social_network\social\views\friend_request.py:25:1: W191 indentation contains tabs
+D:\DjangoProject\social_network\social\views\friend_request.py:26:1: W191 indentation contains tabs
+D:\DjangoProject\social_network\social\views\friend_request.py:28:1: W191 indentation contains tabs
+D:\DjangoProject\social_network\social\views\friend_request.py:29:1: W191 indentation contains tabs
+D:\DjangoProject\social_network\social\views\friend_request.py:29:80: E501 line too long (101 > 79 characters)
+D:\DjangoProject\social_network\social\views\friend_request.py:31:1: W191 indentation contains tabs
+D:\DjangoProject\social_network\social\views\friend_request.py:34:1: W191 indentation contains tabs
+D:\DjangoProject\social_network\social\views\friend_request.py:34:2: E303 too many blank lines (2)
+D:\DjangoProject\social_network\social\views\friend_request.py:35:1: W191 indentation contains tabs
+D:\DjangoProject\social_network\social\views\friend_request.py:36:1: W191 indentation contains tabs
+D:\DjangoProject\social_network\social\views\friend_request.py:37:1: W191 indentation contains tabs
+D:\DjangoProject\social_network\social\views\friend_request.py:37:30: E211 whitespace before '('
+D:\DjangoProject\social_network\social\views\friend_request.py:38:1: W191 indentation contains tabs
+D:\DjangoProject\social_network\social\views\friend_request.py:39:1: W191 indentation contains tabs
+D:\DjangoProject\social_network\social\views\friend_request.py:41:1: W191 indentation contains tabs
+D:\DjangoProject\social_network\social\views\friend_request.py:42:1: W191 indentation contains tabs
+D:\DjangoProject\social_network\social\views\friend_request.py:45:1: W191 indentation contains tabs
+D:\DjangoProject\social_network\social\views\friend_request.py:45:2: E303 too many blank lines (2)
+D:\DjangoProject\social_network\social\views\friend_request.py:46:1: W191 indentation contains tabs
+D:\DjangoProject\social_network\social\views\friend_request.py:47:1: W191 indentation contains tabs
+D:\DjangoProject\social_network\social\views\friend_request.py:48:1: W191 indentation contains tabs
+D:\DjangoProject\social_network\social\views\friend_request.py:48:30: E211 whitespace before '('
+D:\DjangoProject\social_network\social\views\friend_request.py:49:1: W191 indentation contains tabs
+D:\DjangoProject\social_network\social\views\friend_request.py:50:1: W191 indentation contains tabs
+D:\DjangoProject\social_network\social\views\friend_request.py:52:1: W191 indentation contains tabs
+D:\DjangoProject\social_network\social\views\friend_request.py:53:1: W191 indentation contains tabs
+D:\DjangoProject\social_network\social\views\friend_request.py:56:1: W191 indentation contains tabs
+D:\DjangoProject\social_network\social\views\friend_request.py:56:2: E303 too many blank lines (2)
+D:\DjangoProject\social_network\social\views\friend_request.py:57:1: W191 indentation contains tabs
+D:\DjangoProject\social_network\social\views\friend_request.py:58:1: W191 indentation contains tabs
+D:\DjangoProject\social_network\social\views\friend_request.py:60:1: W191 indentation contains tabs
+D:\DjangoProject\social_network\social\views\friend_request.py:61:1: W191 indentation contains tabs
+D:\DjangoProject\social_network\social\views\friend_request.py:62:1: W191 indentation contains tabs
+D:\DjangoProject\social_network\social\views\friend_request.py:62:60: W291 trailing whitespace
+D:\DjangoProject\social_network\social\views\friend_request.py:63:1: W191 indentation contains tabs
+D:\DjangoProject\social_network\social\views\friend_request.py:64:1: W191 indentation contains tabs
+D:\DjangoProject\social_network\social\views\friend_request.py:67:1: W191 indentation contains tabs
+D:\DjangoProject\social_network\social\views\friend_request.py:67:3: E303 too many blank lines (2)
+D:\DjangoProject\social_network\social\views\friend_request.py:67:67: W291 trailing whitespace
+D:\DjangoProject\social_network\social\views\friend_request.py:68:1: W191 indentation contains tabs
+D:\DjangoProject\social_network\social\views\friend_request.py:68:5: E128 continuation line under-indented for visual indent
+D:\DjangoProject\social_network\social\views\friend_request.py:69:1: W191 indentation contains tabs
+D:\DjangoProject\social_network\social\views\friend_request.py:70:1: W191 indentation contains tabs
+D:\DjangoProject\social_network\social\views\friend_request.py:71:1: W191 indentation contains tabs
+D:\DjangoProject\social_network\social\views\friend_request.py:72:1: W191 indentation contains tabs
+D:\DjangoProject\social_network\social\views\friend_request.py:74:1: W191 indentation contains tabs
+D:\DjangoProject\social_network\social\views\friend_request.py:75:1: W191 indentation contains tabs
+D:\DjangoProject\social_network\social\views\friend_request.py:76:1: W191 indentation contains tabs
+D:\DjangoProject\social_network\social\views\friend_request.py:77:1: W191 indentation contains tabs
+D:\DjangoProject\social_network\social\views\friend_request.py:80:1: W191 indentation contains tabs
+D:\DjangoProject\social_network\social\views\friend_request.py:80:2: E303 too many blank lines (2)
+D:\DjangoProject\social_network\social\views\friend_request.py:81:1: W191 indentation contains tabs
+D:\DjangoProject\social_network\social\views\friend_request.py:82:1: W191 indentation contains tabs
+D:\DjangoProject\social_network\social\views\friend_request.py:84:1: W191 indentation contains tabs
+D:\DjangoProject\social_network\social\views\friend_request.py:85:1: W191 indentation contains tabs
+D:\DjangoProject\social_network\social\views\friend_request.py:86:1: W191 indentation contains tabs
+D:\DjangoProject\social_network\social\views\friend_request.py:86:60: W291 trailing whitespace
+D:\DjangoProject\social_network\social\views\friend_request.py:87:1: W191 indentation contains tabs
+D:\DjangoProject\social_network\social\views\friend_request.py:88:1: W191 indentation contains tabs
+D:\DjangoProject\social_network\social\views\friend_request.py:91:1: W191 indentation contains tabs
+D:\DjangoProject\social_network\social\views\friend_request.py:91:3: E303 too many blank lines (2)
+D:\DjangoProject\social_network\social\views\friend_request.py:91:67: W291 trailing whitespace
+D:\DjangoProject\social_network\social\views\friend_request.py:92:1: W191 indentation contains tabs
+D:\DjangoProject\social_network\social\views\friend_request.py:92:5: E128 continuation line under-indented for visual indent
+D:\DjangoProject\social_network\social\views\friend_request.py:93:1: W191 indentation contains tabs
+D:\DjangoProject\social_network\social\views\friend_request.py:94:1: W191 indentation contains tabs
+D:\DjangoProject\social_network\social\views\friend_request.py:95:1: W191 indentation contains tabs
+D:\DjangoProject\social_network\social\views\friend_request.py:96:1: W191 indentation contains tabs
+D:\DjangoProject\social_network\social\views\friend_request.py:98:1: W191 indentation contains tabs
+D:\DjangoProject\social_network\social\views\friend_request.py:99:1: W191 indentation contains tabs
+D:\DjangoProject\social_network\social\views\friend_request.py:100:1: W191 indentation contains tabs
+D:\DjangoProject\social_network\social\views\friend_request.py:101:1: W191 indentation contains tabs
+D:\DjangoProject\social_network\social\views\login.py:14:1: W293 blank line contains whitespace
+D:\DjangoProject\social_network\social\views\login.py:16:5: E303 too many blank lines (2)
+D:\DjangoProject\social_network\social\views\login.py:23:41: W291 trailing whitespace
+D:\DjangoProject\social_network\social\views\login.py:25:80: E501 line too long (84 > 79 characters)
+D:\DjangoProject\social_network\social\views\login.py:26:80: E501 line too long (81 > 79 characters)
+D:\DjangoProject\social_network\social\views\login.py:28:80: E501 line too long (95 > 79 characters)
+D:\DjangoProject\social_network\social\views\login.py:29:1: W391 blank line at end of file
+D:\DjangoProject\social_network\social\views\logout.py:15:1: W191 indentation contains tabs
+D:\DjangoProject\social_network\social\views\logout.py:15:1: W293 blank line contains whitespace
+D:\DjangoProject\social_network\social\views\logout.py:16:1: E101 indentation contains mixed spaces and tabs
+D:\DjangoProject\social_network\social\views\logout.py:17:1: E101 indentation contains mixed spaces and tabs
+D:\DjangoProject\social_network\social\views\logout.py:18:1: E101 indentation contains mixed spaces and tabs
+D:\DjangoProject\social_network\social\views\logout.py:19:1: E101 indentation contains mixed spaces and tabs
+D:\DjangoProject\social_network\social\views\logout.py:20:1: E101 indentation contains mixed spaces and tabs
+D:\DjangoProject\social_network\social\views\logout.py:21:1: E101 indentation contains mixed spaces and tabs
+D:\DjangoProject\social_network\social\views\logout.py:22:1: E101 indentation contains mixed spaces and tabs
+D:\DjangoProject\social_network\social\views\logout.py:23:1: E101 indentation contains mixed spaces and tabs
+D:\DjangoProject\social_network\social\views\logout.py:23:80: E501 line too long (80 > 79 characters)
+D:\DjangoProject\social_network\social\views\logout.py:24:1: E101 indentation contains mixed spaces and tabs
+D:\DjangoProject\social_network\social\views\logout.py:25:1: E101 indentation contains mixed spaces and tabs
+D:\DjangoProject\social_network\social\views\logout.py:25:80: E501 line too long (95 > 79 characters)
+D:\DjangoProject\social_network\social\views\signup.py:5:1: F401 'rest_framework.permissions.AllowAny' imported but unused
+D:\DjangoProject\social_network\social\views\signup.py:7:1: F811 redefinition of unused 'Response' from line 2
+D:\DjangoProject\social_network\social\views\signup.py:18:1: W293 blank line contains whitespace
+D:\DjangoProject\social_network\social\views\signup.py:21:80: E501 line too long (118 > 79 characters)
+D:\DjangoProject\social_network\social\views\signup.py:23:30: E225 missing whitespace around operator
+D:\DjangoProject\social_network\social\views\signup.py:29:80: E501 line too long (105 > 79 characters)
+D:\DjangoProject\social_network\social\views\signup.py:31:80: E501 line too long (94 > 79 characters)
+D:\DjangoProject\social_network\social\views\user_search.py:15:1: W191 indentation contains tabs
+D:\DjangoProject\social_network\social\views\user_search.py:17:1: W191 indentation contains tabs
+D:\DjangoProject\social_network\social\views\user_search.py:18:1: W191 indentation contains tabs
+D:\DjangoProject\social_network\social\views\user_search.py:19:1: W191 indentation contains tabs
+D:\DjangoProject\social_network\social\views\user_search.py:20:1: W191 indentation contains tabs
+D:\DjangoProject\social_network\social\views\user_search.py:22:1: W191 indentation contains tabs
+D:\DjangoProject\social_network\social\views\user_search.py:22:13: E225 missing whitespace around operator
+D:\DjangoProject\social_network\social\views\user_search.py:23:1: W191 indentation contains tabs
+D:\DjangoProject\social_network\social\views\user_search.py:24:1: W191 indentation contains tabs
+D:\DjangoProject\social_network\social\views\user_search.py:24:1: W293 blank line contains whitespace
+D:\DjangoProject\social_network\social\views\user_search.py:24:2: W292 no newline at end of file
+D:\DjangoProject\social_network\social_network\settings.py:24:80: E501 line too long (81 > 79 characters)
+D:\DjangoProject\social_network\social_network\settings.py:88:1: E265 block comment should start with '# '
+D:\DjangoProject\social_network\social_network\settings.py:92:80: E501 line too long (91 > 79 characters)
+D:\DjangoProject\social_network\social_network\settings.py:95:80: E501 line too long (81 > 79 characters)
+D:\DjangoProject\social_network\social_network\settings.py:98:80: E501 line too long (82 > 79 characters)
+D:\DjangoProject\social_network\social_network\settings.py:101:80: E501 line too long (83 > 79 characters)
+social\serializers\__init__.py:1:1: F401 '.friend_request.FriendRequestSerializer' imported but unused
+social\serializers\__init__.py:2:1: F401 '.login.LoginSerializer' imported but unused
+social\serializers\__init__.py:3:1: F401 '.logout.LogoutSerializer' imported but unused
+social\serializers\__init__.py:4:1: F401 '.users.UserSerializer' imported but unused
