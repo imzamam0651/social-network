@@ -1,6 +1,6 @@
 from django.db.models import Q
 from rest_framework import status
-from rest_framework.authentication import BasicAuthentication, SessionAuthentication  # noqa: E501;
+from rest_framework.authentication import BasicAuthentication, SessionAuthentication
 from rest_framework.decorators import action
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
@@ -25,7 +25,6 @@ class FriendRequestViewset(viewsets.ModelViewSet):
             self.throttle_scope = "friend_requests"
         return super().initial(request, *args, **kwargs)
 
-
     def perform_create(self, serializer):
         data = serializer.validated_data
 
@@ -34,7 +33,15 @@ class FriendRequestViewset(viewsets.ModelViewSet):
 
         if data.get("sender") == data.get("receiver"):
             raise serializers.ValidationError(
-                "you can't send friend request to yourself. Try different user"
+                "you can't send friend request to yourself. Try different user."
+            )
+
+        queryset = self.queryset.filter(
+            sender=self.request.user, receiver=data.get("receiver")
+        )
+        if queryset.exists():
+            raise serializers.ValidationError(
+                "you have already sent friend request to this user. Try different user."
             )
 
         serializer.save()
