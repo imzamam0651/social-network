@@ -1,8 +1,6 @@
 from django.contrib.auth import get_user_model
 from django.contrib.auth.backends import ModelBackend
 
-from social.serializers import UserSerializer  # noqa: F401;
-
 USER_MODEL = get_user_model()
 
 

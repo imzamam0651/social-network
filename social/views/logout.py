@@ -10,6 +10,7 @@ USER_MODEL = get_user_model()
 
 
 class LogoutAPIView(APIView):
+    permission_classes = []
 
     def post(self, request):
         serializer_data = LogoutSerializer(data=request.POST)
@@ -18,10 +19,8 @@ class LogoutAPIView(APIView):
             user = User.objects.get(email=data["email"])
             if user:
                 logout(request)
-                return Response(
-                    serializer_data.data, status=status.HTTP_200_OK
-                )  # noqa: E501;
+                return Response(serializer_data.data, status=status.HTTP_200_OK)
             return Response({"detail": "user does not exists"})
         return Response(
-            {"errors": serializer_data.errors}, status=status.HTTP_400_BAD_REQUEST  # noqa: E501;
-        )  # noqa: E501;
+            {"errors": serializer_data.errors}, status=status.HTTP_400_BAD_REQUEST
+        )

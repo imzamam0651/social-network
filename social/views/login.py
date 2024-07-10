@@ -11,6 +11,8 @@ USER_MODEL = get_user_model()
 
 class LoginAPIView(APIView):
 
+    permission_classes = []
+
     def post(self, request):
         serializer_data = LoginSerializer(data=request.POST)
         if serializer_data.is_valid():
@@ -20,9 +22,9 @@ class LoginAPIView(APIView):
                 if user.check_password(data["password"]):
                     login(request, user)
                     user.save()
-                    return Response(serializer_data.data, status=status.HTTP_200_OK)  # noqa: E501;
-                return Response({"message": "You are successfully loged in !!!"})  # noqa: E501;
+                    return Response(serializer_data.data, status=status.HTTP_200_OK)
+                return Response({"message": "You are successfully loged in !!!"})
             return Response({"detail": "user does not exists"})
         return Response(
-            {"errors": serializer_data.errors}, status=status.HTTP_400_BAD_REQUEST  # noqa: E501;
+            {"errors": serializer_data.errors}, status=status.HTTP_400_BAD_REQUEST
         )

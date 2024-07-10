@@ -102,11 +102,6 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-AUTHENTICATION_BACKENDS = [
-    'social.views.EmailBackend',
-    # 'django.contrib.auth.backends.ModelBackend'
-]
-
 # Internationalization
 # https://docs.djangoproject.com/en/4.0/topics/i18n/
 
@@ -124,14 +119,24 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
+# DRF Configuration
 REST_FRAMEWORK = {
 
- "DEFAULT_THROTTLE_CLASSES": (
+    "DEFAULT_PERMISSION_CLASSES": (
+        "rest_framework.permissions.IsAuthenticated",
+    ),
+
+    "DEFAULT_THROTTLE_CLASSES": (
         "rest_framework.throttling.ScopedRateThrottle",
     ),
 
     "DEFAULT_THROTTLE_RATES": {"friend_requests": "3/min"},
 }
+
+AUTHENTICATION_BACKENDS = [
+    'social.views.EmailBackend',
+    # 'django.contrib.auth.backends.ModelBackend'
+]
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field

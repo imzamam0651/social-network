@@ -1,6 +1,5 @@
 from django.contrib.auth import get_user_model, login
 from rest_framework import status
-from rest_framework.permissions import AllowAny  # noqa: F401;
 from rest_framework.response import Response
 from rest_framework.views import APIView
 
@@ -11,9 +10,9 @@ USER_MODEL = get_user_model()
 
 class SignupAPIView(APIView):
     authentication_classes = []
+    permission_classes = []
 
     def post(self, request):
-        # import pdb; pdb.set_trace()
 
         email = request.POST.get("email")
         if USER_MODEL.objects.filter(email=email).exists():

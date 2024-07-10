@@ -1,8 +1,6 @@
 from django.db.models import Q
 from rest_framework import status
-from rest_framework.authentication import BasicAuthentication, SessionAuthentication
 from rest_framework.decorators import action
-from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
 from rest_framework_json_api import serializers
 from rest_framework_json_api.views import viewsets
@@ -12,8 +10,6 @@ from social.serializers import FriendRequestSerializer
 
 
 class FriendRequestViewset(viewsets.ModelViewSet):
-    authentication_classes = (BasicAuthentication, SessionAuthentication)
-    permission_classes = [IsAuthenticated]
 
     queryset = FriendRequest.objects.all()
     serializer_class = FriendRequestSerializer
@@ -37,11 +33,12 @@ class FriendRequestViewset(viewsets.ModelViewSet):
             )
 
         queryset = self.queryset.filter(
-            sender=self.request.user, receiver=data.get("receiver")
+            Q(sender=self.request.user, receiver=data.get("receiver"))
+            | Q(sender=data.get("receiver"), receiver=self.request.user)
         )
         if queryset.exists():
             raise serializers.ValidationError(
-                "you have already sent friend request to this user. Try different user."
+                "you have already sent the friend request to this user. Try different user."
             )
 
         serializer.save()
